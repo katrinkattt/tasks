@@ -1,0 +1,14 @@
+d = [' ','desyat', 'dvadzat', 'tridzat', 'sorok', 'petdesat', 'shestdesat', 'semdesat', 'vosemdesat', 'devanosto', 'sto']
+g = [' ','odin', 'dva', 'tri', 'chetire', 'pyat', 'shest', 'sem', 'vosem', 'devat']
+c = int(input())
+dt = c//10
+gd = c%10
+if dt == 1:
+    if gd == 5 or gd =='':
+        print(g[gd], 'nadzat let')
+    else:
+        print(g[gd], 'nadzat godov')
+elif gd == '' or gd == 5:
+    print(d[dt], 'let')
+else:
+    print(d[dt]+g[gd], 'godov')
