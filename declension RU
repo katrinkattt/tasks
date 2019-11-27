@@ -1,0 +1,50 @@
+s = ['','sto', 'dvesti', 'tristo', 'chetiresto','pytsot', 'chesot', 'vosemsot','devyatsot']
+d = ['','','dvadzat', 'tridzat', 'sorok', 'pyatdesat', 'shesdesat', 'semdesat', 'vosemdesat', 'devyanosno']
+e = ['','odin', 'dva','tri','chetiri','pyat','chest' 'sem','vosem','devat','']
+c = str(input())
+p = input()
+so = int(c[0])
+de = int(c[1])
+ed = int(c[2])
+sot = s[so]
+des = d[de]
+edn = e[ed]
+
+# print(sot)
+if p == 'r' or p =='d' or p=='t' or p=='p':
+    if des == 'sorok' :
+        des+='a'
+    else:
+        des += 'i'
+if  p == 'r':
+    if edn == 'odin': 
+        print(sot,des,'odnogo')
+    elif edn == 'dva':
+        print(sot,des,'dvuch')
+    elif edn =='tri':
+        print(sot,des,'trech')
+    elif edn =='chetiri':
+        print(sot,des,'chetirech')
+    elif edn == 'pyat' or edn=='chest' or edn=='sem' or edn=='vosem' or edn=='devat':
+        edn +='i'
+        print(sot,des,edn)
+    else:
+        print(0)
+elif p == 'd':
+    if edn == 'odin':
+        print(sot,des,'odnomu')
+    elif edn == 'dva' or edn == 'tri' or edn =='chetiri':
+        edn +='um'
+        print(sot,des,edn)
+    elif edn == 'pyat' or edn=='chest' or edn=='sem' or edn=='vosem' or edn=='devat':
+        edn +='i'
+        print(sot,des,edn)
+elif p == 'v':
+    if edn == 'dva' or edn == 'tri' or edn =='chetiri' or edn == 'pyat' or edn=='devat':
+        edn += 'ый'
+        print(sot,des,edn)
+    elif edn=='chest' or edn=='sem' or edn=='vosem':
+        edn += 'ой'
+        print(sot,des,edn)
+else:
+    print('no has rod')
