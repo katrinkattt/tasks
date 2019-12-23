@@ -1,5 +1,5 @@
 d = [' ','desyat', 'dvadzat', 'tridzat', 'sorok', 'petdesat', 'shestdesat', 'semdesat', 'vosemdesat', 'devanosto', 'sto']
-g = [' ','odin', 'dva', 'tri', 'chetire', 'pyat', 'shest', 'sem', 'vosem', 'devat']
+g = ['0','odin', 'dva', 'tri', 'chetire', 'pyat', 'shest', 'sem', 'vosem', 'devat']
 c = int(input())
 dt = c//10
 gd = c%10
